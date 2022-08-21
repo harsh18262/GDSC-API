@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 
 mongoose.connect(
-    "***REMOVED***",
+    process.env.MONGO,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true
